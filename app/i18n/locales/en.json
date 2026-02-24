@@ -1,0 +1,99 @@
+{
+  "nav": {
+    "services": "Services",
+    "about": "About",
+    "studio": "Studio",
+    "contact": "Contact",
+    "book": "Book",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "hero": {
+    "eyebrow": "Reformer Pilates · Precision Movement",
+    "titleLine1": "Move with",
+    "titleLine2": "Intention.",
+    "body": "Every session is a conversation between you and the Reformer — calibrated, precise, transformative.",
+    "cta": "Book a Session",
+    "explore": "Explore classes →",
+    "scroll": "Scroll"
+  },
+  "philosophy": {
+    "eyebrow": "Our Approach",
+    "title": "Strength built from stillness",
+    "quote": "The Reformer doesn't reshape the body. It teaches the mind to inhabit it.",
+    "body1": "Reformer Pilates is a practice of deliberate effort. Each spring, each strap, each breath is calibrated to meet you exactly where you are — not where you think you should be.",
+    "body2": "At Heiko Ryu, sessions are unhurried. We move slowly so you feel everything. Precision over speed. Depth over volume."
+  },
+  "services": {
+    "eyebrow": "What We Offer",
+    "title": "Reformer Pilates, your way",
+    "items": [
+      {
+        "num": "01",
+        "title": "Private Sessions",
+        "desc": "One-to-one coaching, completely tailored. The most direct path to change.",
+        "meta": "60 min · 1 person"
+      },
+      {
+        "num": "02",
+        "title": "Duo Sessions",
+        "desc": "Train alongside a partner and share the experience without losing personal attention.",
+        "meta": "60 min · 2 people"
+      },
+      {
+        "num": "03",
+        "title": "Group Classes",
+        "desc": "Small groups, never more than six. Every participant receives a trained eye.",
+        "meta": "55 min · Max 6"
+      }
+    ]
+  },
+  "studio": {
+    "spaceEyebrow": "The Space",
+    "spaceTitle": "A room that calms before you begin",
+    "spaceBody": "Natural light. Pale timber. Stone. Linen. The studio was designed as a place of quiet before it was ever a gym.",
+    "spaceAlt": "A serene, light-filled studio space",
+    "equipmentEyebrow": "The Equipment",
+    "equipmentTitle": "Balanced Body Reformers. Studio grade.",
+    "equipmentBody": "Every reformer is a Balanced Body — the benchmark for smooth spring action and precise resistance. Maintained to exacting standards, always.",
+    "equipmentAlt": "A Balanced Body Reformer in the studio"
+  },
+  "instructor": {
+    "eyebrow": "Your Instructor",
+    "title": "Meet Heiko",
+    "portraitAlt": "Portrait of Heiko Ryu",
+    "body1": "Heiko Ryu trained in classical Pilates methodology under leading instructors in Berlin and Sydney. A decade spent working at the intersection of movement science and mindful practice.",
+    "body2": "Before opening the studio, Heiko spent years in rehabilitation settings — supporting post-surgical recovery, chronic pain management, and athletic conditioning. Each session carries that depth.",
+    "body3": "The approach is always the same: meet you where you are, listen to your body, and build from there.",
+    "instagramHandle": "@heikoryupilates",
+    "instagramAria": "Follow Heiko Ryu Pilates on Instagram (opens in new tab)"
+  },
+  "contact": {
+    "eyebrow": "Start Here",
+    "title": "Your first session is the hardest step.",
+    "body": "Reach out via Instagram to enquire about availability and introductory pricing.",
+    "bookCta": "Book a Session",
+    "followCta": "Follow on Instagram",
+    "note": "Studio location shared on enquiry · Sessions by appointment only"
+  },
+  "footer": {
+    "tagline": "Movement as Medicine",
+    "follow": "Follow",
+    "copyright": "© 2025 Heiko Ryu Pilates Studio",
+    "studioType": "Reformer Pilates Studio",
+    "switchToEn": "Switch to English",
+    "switchToRo": "Schimbă în Română",
+    "instagramAria": "Follow Heiko Ryu Pilates on Instagram (opens in new tab)",
+    "instagramHandle": "@heikoryupilates",
+    "nav": {
+      "services": "Services",
+      "about": "About",
+      "studio": "Studio",
+      "contact": "Contact"
+    }
+  },
+  "langSwitcher": {
+    "en": "Switch to English",
+    "ro": "Switch to Romanian"
+  }
+}

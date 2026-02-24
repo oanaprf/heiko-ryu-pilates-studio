@@ -1,0 +1,99 @@
+{
+  "nav": {
+    "services": "Servicii",
+    "about": "Despre",
+    "studio": "Studio",
+    "contact": "Contact",
+    "book": "Rezervă",
+    "openMenu": "Deschide meniu",
+    "closeMenu": "Închide meniu"
+  },
+  "hero": {
+    "eyebrow": "Pilates Reformer · Mișcare de Precizie",
+    "titleLine1": "Mișcă-te cu",
+    "titleLine2": "Intenție.",
+    "body": "Fiecare ședință este o conversație între tine și Reformer — calibrată, precisă, transformatoare.",
+    "cta": "Rezervă o Ședință",
+    "explore": "Explorează clasele →",
+    "scroll": "Scroll"
+  },
+  "philosophy": {
+    "eyebrow": "Abordarea Noastră",
+    "title": "Forță construită din liniște",
+    "quote": "Reformerul nu remodelează corpul. Îl învață mintea să-l locuiască.",
+    "body1": "Pilates Reformer este o practică a efortului deliberat. Fiecare arc, fiecare curea, fiecare respirație este calibrată pentru a te întâlni exact acolo unde ești — nu unde crezi că ar trebui să fii.",
+    "body2": "La Heiko Ryu, ședințele sunt liniștite. Ne mișcăm lent ca să simți totul. Precizie în locul vitezei. Profunzime în locul volumului."
+  },
+  "services": {
+    "eyebrow": "Ce Oferim",
+    "title": "Pilates Reformer, în felul tău",
+    "items": [
+      {
+        "num": "01",
+        "title": "Ședințe Private",
+        "desc": "Coaching unu-la-unu, complet personalizat. Calea cea mai directă spre schimbare.",
+        "meta": "60 min · 1 persoană"
+      },
+      {
+        "num": "02",
+        "title": "Ședințe Duo",
+        "desc": "Antrenează-te cu un partener și împărțiți experiența fără a pierde atenția personală.",
+        "meta": "60 min · 2 persoane"
+      },
+      {
+        "num": "03",
+        "title": "Clase de Grup",
+        "desc": "Grupuri mici, niciodată mai mult de șase. Fiecare participant primește atenție.",
+        "meta": "55 min · Max 6"
+      }
+    ]
+  },
+  "studio": {
+    "spaceEyebrow": "Spațiul",
+    "spaceTitle": "Un spațiu care liniștește înainte să începi",
+    "spaceBody": "Lumină naturală. Lemn deschis. Piatră. In. Studioul a fost conceput ca un loc de liniște înainte de a fi o sală.",
+    "spaceAlt": "Un spațiu de studio luminos și liniștit",
+    "equipmentEyebrow": "Echipamentul",
+    "equipmentTitle": "Reformere Balanced Body. Standard profesional.",
+    "equipmentBody": "Fiecare reformer este Balanced Body — standardul pentru acțiunea moale a arcurilor și rezistența precisă. Întreținut la standarde exacte, întotdeauna.",
+    "equipmentAlt": "Un Reformer Balanced Body în studio"
+  },
+  "instructor": {
+    "eyebrow": "Instructorul Tău",
+    "title": "Cunoaște-l pe Heiko",
+    "portraitAlt": "Portretul lui Heiko Ryu",
+    "body1": "Heiko Ryu s-a format în metodologia clasică Pilates sub instructori de top din Berlin și Sydney. Un deceniu petrecut la intersecția dintre știința mișcării și practica conștientă.",
+    "body2": "Înainte de a deschide studioul, Heiko a lucrat ani de zile în recuperare — sprijinind recuperarea post-chirurgicală, gestionarea durerii cronice și condiționarea atletică. Fiecare ședință poartă această profunzime.",
+    "body3": "Abordarea este mereu aceeași: te întâlnesc acolo unde ești, ascult corpul tău și construiesc de acolo.",
+    "instagramHandle": "@heikoryupilates",
+    "instagramAria": "Urmărește Heiko Ryu Pilates pe Instagram (se deschide în tab nou)"
+  },
+  "contact": {
+    "eyebrow": "Începe Aici",
+    "title": "Prima ta ședință este cel mai greu pas.",
+    "body": "Contactați prin Instagram pentru disponibilitate și prețuri introductive.",
+    "bookCta": "Rezervă o Ședință",
+    "followCta": "Urmărește pe Instagram",
+    "note": "Locația studioului, la cerere · Ședințe numai cu programare"
+  },
+  "footer": {
+    "tagline": "Mișcarea ca Medicină",
+    "follow": "Urmărește",
+    "copyright": "© 2025 Heiko Ryu Pilates Studio",
+    "studioType": "Studio Pilates Reformer",
+    "switchToEn": "Switch to English",
+    "switchToRo": "Schimbă în Română",
+    "instagramAria": "Urmărește Heiko Ryu Pilates pe Instagram (se deschide în tab nou)",
+    "instagramHandle": "@heikoryupilates",
+    "nav": {
+      "services": "Servicii",
+      "about": "Despre",
+      "studio": "Studio",
+      "contact": "Contact"
+    }
+  },
+  "langSwitcher": {
+    "en": "Switch to English",
+    "ro": "Schimbă în Română"
+  }
+}
