@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: "export",
+  basePath: "/heiko-ryu-pilates-studio",
+  assetPrefix: "/heiko-ryu-pilates-studio",
 };
 
 export default nextConfig;
