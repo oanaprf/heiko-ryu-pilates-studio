@@ -2,98 +2,110 @@
   "nav": {
     "services": "Servicii",
     "about": "Despre",
-    "studio": "Studio",
+    "prices": "Prețuri",
     "contact": "Contact",
-    "book": "Rezervă",
-    "openMenu": "Deschide meniu",
-    "closeMenu": "Închide meniu"
+    "book": "Rezervă acum"
   },
   "hero": {
-    "eyebrow": "Pilates Reformer · Mișcare de Precizie",
-    "titleLine1": "Mișcă-te cu",
-    "titleLine2": "Intenție.",
-    "body": "Fiecare ședință este o conversație între tine și Reformer — calibrată, precisă, transformatoare.",
-    "cta": "Rezervă o Ședință",
-    "explore": "Explorează clasele →",
-    "scroll": "Scroll"
-  },
-  "philosophy": {
-    "eyebrow": "Abordarea Noastră",
-    "title": "Forță construită din liniște",
-    "quote": "Reformerul nu remodelează corpul. Îl învață mintea să-l locuiască.",
-    "body1": "Pilates Reformer este o practică a efortului deliberat. Fiecare arc, fiecare curea, fiecare respirație este calibrată pentru a te întâlni exact acolo unde ești — nu unde crezi că ar trebui să fii.",
-    "body2": "La Heiko Ryu, ședințele sunt liniștite. Ne mișcăm lent ca să simți totul. Precizie în locul vitezei. Profunzime în locul volumului."
-  },
-  "services": {
-    "eyebrow": "Ce Oferim",
-    "title": "Pilates Reformer, în felul tău",
-    "items": [
-      {
-        "num": "01",
-        "title": "Ședințe Private",
-        "desc": "Coaching unu-la-unu, complet personalizat. Calea cea mai directă spre schimbare.",
-        "meta": "60 min · 1 persoană"
-      },
-      {
-        "num": "02",
-        "title": "Ședințe Duo",
-        "desc": "Antrenează-te cu un partener și împărțiți experiența fără a pierde atenția personală.",
-        "meta": "60 min · 2 persoane"
-      },
-      {
-        "num": "03",
-        "title": "Clase de Grup",
-        "desc": "Grupuri mici, niciodată mai mult de șase. Fiecare participant primește atenție.",
-        "meta": "55 min · Max 6"
-      }
-    ]
+    "label": "Studio Boutique de Pilates",
+    "headline_1": "Găsește-ți Echilibrul,",
+    "headline_2": "Descoperă-ți Puterea",
+    "sub": "Un sanctuar al mișcării conștiente și al bunăstării holistice în inima orașului.",
+    "cta": "Rezervă o Clasă",
+    "learn": "Află mai mult",
+    "scroll": "Derulează pentru a explora"
   },
   "studio": {
-    "spaceEyebrow": "Spațiul",
-    "spaceTitle": "Un spațiu care liniștește înainte să începi",
-    "spaceBody": "Lumină naturală. Lemn deschis. Piatră. In. Studioul a fost conceput ca un loc de liniște înainte de a fi o sală.",
-    "spaceAlt": "Un spațiu de studio luminos și liniștit",
-    "equipmentEyebrow": "Echipamentul",
-    "equipmentTitle": "Reformere Balanced Body. Standard profesional.",
-    "equipmentBody": "Fiecare reformer este Balanced Body — standardul pentru acțiunea moale a arcurilor și rezistența precisă. Întreținut la standarde exacte, întotdeauna.",
-    "equipmentAlt": "Un Reformer Balanced Body în studio"
+    "label": "Studioul Nostru",
+    "title": "Un Spațiu pentru Mișcare Conștientă",
+    "text": "Heiko Ryu este un studio boutique de Pilates conceput ca un sanctuar pentru cei care caută armonie între corp și minte. Spațiul nostru intim permite atenție personalizată și o experiență cu adevărat transformatoare.",
+    "stat1_val": "8+",
+    "stat1": "Ani de experiență",
+    "stat2_val": "500+",
+    "stat2": "Clienți mulțumiți",
+    "stat3_val": "20+",
+    "stat3": "Clase săptămânale"
   },
-  "instructor": {
-    "eyebrow": "Instructorul Tău",
-    "title": "Cunoaște-l pe Heiko",
-    "portraitAlt": "Portretul lui Heiko Ryu",
-    "body1": "Heiko Ryu s-a format în metodologia clasică Pilates sub instructori de top din Berlin și Sydney. Un deceniu petrecut la intersecția dintre știința mișcării și practica conștientă.",
-    "body2": "Înainte de a deschide studioul, Heiko a lucrat ani de zile în recuperare — sprijinind recuperarea post-chirurgicală, gestionarea durerii cronice și condiționarea atletică. Fiecare ședință poartă această profunzime.",
-    "body3": "Abordarea este mereu aceeași: te întâlnesc acolo unde ești, ascult corpul tău și construiesc de acolo.",
-    "instagramHandle": "@heikoryupilates",
-    "instagramAria": "Urmărește Heiko Ryu Pilates pe Instagram (se deschide în tab nou)"
+  "benefits": {
+    "label": "De ce Pilates",
+    "title": "Transformă Corpul & Mintea",
+    "card1_title": "Putere & Centru",
+    "card1_text": "Construiți stabilitate profundă a centrului și forță funcțională prin mișcări precise și controlate.",
+    "card2_title": "Flexibilitate & Postură",
+    "card2_text": "Îmbunătățiți amplitudinea mișcărilor și stați mai drepți cu o practică constantă de Pilates.",
+    "card3_title": "Conexiunea Corp-Minte",
+    "card3_text": "Cultivați mindfulness și reduceți stresul prin exerciții de respirație focalizate și mișcare intenționată."
   },
-  "contact": {
-    "eyebrow": "Începe Aici",
-    "title": "Prima ta ședință este cel mai greu pas.",
-    "body": "Contactați prin Instagram pentru disponibilitate și prețuri introductive.",
-    "bookCta": "Rezervă o Ședință",
-    "followCta": "Urmărește pe Instagram",
-    "note": "Locația studioului, la cerere · Ședințe numai cu programare"
+  "services": {
+    "label": "Ce Oferim",
+    "title": "Clasele Noastre",
+    "mat_title": "Pilates pe Saltea",
+    "mat_text": "Clase de grup pe saltea, perfecte pentru toate nivelurile. Construiți baza și comunitatea.",
+    "mat_detail": "60 min · Clasă de grup",
+    "reformer_title": "Pilates pe Reformer",
+    "reformer_text": "Sesiuni în grup mic pe aparatul Reformer pentru o practică mai profundă și mai țintită.",
+    "reformer_detail": "60 min · Max 4 persoane",
+    "private_title": "Sesiuni Private",
+    "private_text": "Coaching personalizat unu-la-unu adaptat obiectivelor și corpului dumneavoastră specific.",
+    "private_detail": "60 min · 1-la-1"
+  },
+  "prices": {
+    "label": "Prețuri",
+    "title": "Planuri Simple și Transparente",
+    "popular": "Cel mai popular",
+    "currency": "RON",
+    "s_name": "Starter",
+    "s_price": "150",
+    "s_period": "per sesiune",
+    "s_desc": "Perfect pentru a încerca Pilates",
+    "s_f1": "1 clasă per rezervare",
+    "s_f2": "Saltea sau Reformer",
+    "s_f3": "Toate nivelurile",
+    "s_cta": "Începe acum",
+    "m_name": "Lunar",
+    "m_price": "800",
+    "m_period": "pe lună",
+    "m_desc": "Cea mai bună valoare",
+    "m_f1": "8 clase pe lună",
+    "m_f2": "Acces Saltea & Reformer",
+    "m_f3": "Rezervare prioritară",
+    "m_cta": "Alege Lunar",
+    "p_name": "Premium",
+    "p_price": "1.400",
+    "p_period": "pe lună",
+    "p_desc": "Transformare nelimitată",
+    "p_f1": "Clase nelimitate",
+    "p_f2": "1 sesiune privată / lună",
+    "p_f3": "Evenimente exclusive & acces prioritar",
+    "p_cta": "Alege Premium"
+  },
+  "testimonials": {
+    "label": "Testimoniale",
+    "title": "Povești de Transformare",
+    "q1": "Heiko Ryu a schimbat modul în care gândesc despre mișcare. Nu m-am simțit niciodată mai puternică sau mai centrată.",
+    "q1_author": "Maria C.",
+    "q1_role": "Clientă din 2022",
+    "q2": "Instructorii sunt excepționali. Fiecare sesiune se simte ca un reset complet pentru corpul și mintea mea.",
+    "q2_author": "Andrei M.",
+    "q2_role": "Membru Lunar",
+    "q3": "Am început la recomandarea medicului și am rămas pentru comunitatea incredibilă și rezultatele reale.",
+    "q3_author": "Elena B.",
+    "q3_role": "Membră Premium"
+  },
+  "cta": {
+    "label": "Începe Azi",
+    "title": "Ești Gata să Îți Înceapă Călătoria?",
+    "sub": "Alătură-te unei clase și descoperă ce poate face mișcarea conștientă pentru corpul și mintea ta.",
+    "button": "Rezervă Prima Clasă"
   },
   "footer": {
-    "tagline": "Mișcarea ca Medicină",
-    "follow": "Urmărește",
-    "copyright": "© 2025 Heiko Ryu Pilates Studio",
-    "studioType": "Studio Pilates Reformer",
-    "switchToEn": "Switch to English",
-    "switchToRo": "Schimbă în Română",
-    "instagramAria": "Urmărește Heiko Ryu Pilates pe Instagram (se deschide în tab nou)",
-    "instagramHandle": "@heikoryupilates",
-    "nav": {
-      "services": "Servicii",
-      "about": "Despre",
-      "studio": "Studio",
-      "contact": "Contact"
-    }
-  },
-  "langSwitcher": {
-    "en": "Switch to English",
-    "ro": "Schimbă în Română"
+    "tagline": "Mișcare conștientă pentru fiecare corp.",
+    "contact_title": "Contact",
+    "address": "Str. Florilor 12, București",
+    "email": "hello@heikoryupilates.ro",
+    "phone": "+40 722 123 456",
+    "follow": "Urmărește-ne",
+    "lang_title": "Limbă",
+    "copyright": "© 2024 Heiko Ryu Pilates. Toate drepturile rezervate."
   }
 }

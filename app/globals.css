@@ -1,55 +1,85 @@
 @import "tailwindcss";
 
-:root {
-  --white: #ffffff;
-  --black: #0a0a0a;
-  --ocean: #9bcde8;
-  --gold: #c9a96e;
-  --grey-100: #f7f7f7;
-  --grey-200: #e8e8e8;
-  --grey-500: #8a8a8a;
-  --grey-800: #1a1a1a;
-  --hero-dark: #0f1a1f;
+@theme {
+  /* Brand Colors */
+  --color-ocean: #9bcde8;
+  --color-ocean-dark: #6fb3d9;
+  --color-ocean-light: #daeef7;
+  --color-cream: #faf9f7;
+  --color-linen: #f0ece6;
+  --color-sage: #a8c0a4;
+  --color-gold: #c9a96e;
+  --color-slate: #1b2124;
+  --color-slate-mid: #2e3740;
+  --color-muted: #6e7d84;
+  --color-border: #e4ddd6;
+
+  /* Typography */
+  --font-serif: var(--font-cormorant), Georgia, serif;
+  --font-sans: var(--font-dmsans), system-ui, sans-serif;
 }
 
-@theme inline {
-  --color-white: var(--white);
-  --color-black: var(--black);
-  --color-ocean: var(--ocean);
-  --color-gold: var(--gold);
-  --color-grey-100: var(--grey-100);
-  --color-grey-200: var(--grey-200);
-  --color-grey-500: var(--grey-500);
-  --color-grey-800: var(--grey-800);
-  --color-hero-dark: var(--hero-dark);
-  --font-serif: var(--font-cormorant);
-  --font-sans: var(--font-dm-sans);
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
-html {
-  scroll-behavior: smooth;
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-14px); }
 }
 
-body {
-  background: #fff;
-  color: var(--grey-800);
-  margin: 0;
-  -webkit-font-smoothing: antialiased;
+@keyframes draw-line {
+  from { transform: scaleY(0); }
+  to { transform: scaleY(1); }
 }
 
-h1,
-h2,
-h3,
-h4 {
-  margin: 0;
+.animate-fade-up {
+  animation: fade-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
 }
 
-a {
-  text-decoration: none;
+.animate-fade-in {
+  animation: fade-in 0.6s ease-out both;
+}
+
+.animate-float {
+  animation: float 7s ease-in-out infinite;
+}
+
+.animate-draw-line {
+  animation: draw-line 1.2s ease-out both;
+  transform-origin: top center;
+}
+
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+.delay-500 { animation-delay: 500ms; }
+.delay-600 { animation-delay: 600ms; }
+.delay-700 { animation-delay: 700ms; }
+.delay-800 { animation-delay: 800ms; }
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    background-color: var(--color-cream);
+    font-family: var(--font-sans);
+    color: var(--color-slate);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 }

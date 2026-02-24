@@ -1,85 +1,94 @@
 "use client";
 
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { InstagramIcon } from "./InstagramIcon";
+import InstagramIcon from "./InstagramIcon";
 
-const NAV_LINKS = [
-  { href: "#services", key: "footer.nav.services" },
-  { href: "#about", key: "footer.nav.about" },
-  { href: "#studio", key: "footer.nav.studio" },
-  { href: "#contact", key: "footer.nav.contact" },
-];
-
-export function SiteFooter() {
+export default function SiteFooter() {
   const { t, i18n } = useTranslation();
+  const [lang, setLang] = useState(i18n.language);
+
+  const changeLang = (l: string) => {
+    i18n.changeLanguage(l);
+    setLang(l);
+  };
 
   return (
-    <footer className="bg-black pb-8 pt-16">
-      <div className="mx-auto max-w-[1200px] px-[clamp(24px,5vw,80px)]">
-        <div className="mb-12 grid grid-cols-[repeat(auto-fit,minmax(160px,1fr))] gap-10">
-          <div>
-            <p className="mb-2 font-serif text-[15px] font-light italic tracking-[0.2em] text-gold">
-              HEIKO RYU
-            </p>
-            <p className="font-sans text-xs font-light italic text-white/30">
+    <footer id="contact" className="bg-slate-mid pt-16 pb-8">
+      <div className="mx-auto max-w-7xl px-6">
+        <div className="mb-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+          {/* Brand */}
+          <div className="sm:col-span-2 lg:col-span-2">
+            <div className="mb-3 font-serif text-2xl italic text-white">Heiko Ryu</div>
+            <p className="mb-6 max-w-xs text-sm leading-relaxed text-white/50">
               {t("footer.tagline")}
             </p>
           </div>
 
-          <nav aria-label="Footer navigation">
-            {NAV_LINKS.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="block py-1.5 font-sans text-xs tracking-[0.08em] text-white/40 transition-colors duration-200 hover:text-ocean"
-              >
-                {t(link.key)}
-              </a>
-            ))}
-          </nav>
-
+          {/* Contact */}
           <div>
-            <p className="mb-3 font-sans text-[10px] tracking-[0.25em] uppercase text-white/25">
+            <h4 className="mb-5 text-xs font-medium uppercase tracking-[0.15em] text-white/35">
+              {t("footer.contact_title")}
+            </h4>
+            <ul className="space-y-2.5 text-sm text-white/55">
+              <li>{t("footer.address")}</li>
+              <li>
+                <a
+                  href={`mailto:${t("footer.email")}`}
+                  className="transition-colors hover:text-ocean"
+                >
+                  {t("footer.email")}
+                </a>
+              </li>
+              <li>
+                <a
+                  href={`tel:${t("footer.phone").replace(/\s/g, "")}`}
+                  className="transition-colors hover:text-ocean"
+                >
+                  {t("footer.phone")}
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Social + Language */}
+          <div>
+            <h4 className="mb-5 text-xs font-medium uppercase tracking-[0.15em] text-white/35">
               {t("footer.follow")}
-            </p>
+            </h4>
             <a
-              href="https://instagram.com/heikoryupilates"
+              href="https://www.instagram.com/heikoryupilates/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 font-sans text-[13px] text-white/50 transition-colors duration-200 hover:text-ocean"
-              aria-label={t("footer.instagramAria")}
+              className="mb-8 inline-flex items-center gap-2.5 text-sm text-white/55 transition-colors hover:text-ocean"
             >
-              <InstagramIcon size={14} />
-              {t("footer.instagramHandle")}
+              <InstagramIcon className="h-5 w-5" />
+              @heikoryupilates
             </a>
+
+            <h4 className="mb-4 mt-8 text-xs font-medium uppercase tracking-[0.15em] text-white/35">
+              {t("footer.lang_title")}
+            </h4>
+            <div className="flex gap-2">
+              {(["ro", "en"] as const).map((l) => (
+                <button
+                  key={l}
+                  onClick={() => changeLang(l)}
+                  className={`rounded-full px-4 py-1.5 text-sm font-medium transition-all ${
+                    lang === l
+                      ? "bg-ocean text-white"
+                      : "text-white/45 hover:text-white/75"
+                  }`}
+                >
+                  {l.toUpperCase()}
+                </button>
+              ))}
+            </div>
           </div>
         </div>
 
-        <div className="mb-12 flex justify-center gap-6">
-          {(["en", "ro"] as const).map((l) => (
-            <button
-              key={l}
-              onClick={() => i18n.changeLanguage(l)}
-              aria-pressed={i18n.language === l}
-              aria-label={l === "en" ? t("footer.switchToEn") : t("footer.switchToRo")}
-              className={`cursor-pointer border-b bg-transparent pb-1 font-sans text-[11px] tracking-[0.15em] uppercase transition-colors duration-200 ${
-                i18n.language === l
-                  ? "border-ocean text-ocean"
-                  : "border-transparent text-white/30"
-              }`}
-            >
-              {l.toUpperCase()}
-            </button>
-          ))}
-        </div>
-
-        <div className="flex flex-wrap justify-between gap-2 border-t border-white/10 pt-6">
-          <p className="font-sans text-[11px] text-white/20">
-            {t("footer.copyright")}
-          </p>
-          <p className="font-sans text-[11px] text-white/15">
-            {t("footer.studioType")}
-          </p>
+        <div className="border-t border-white/10 pt-8 text-center text-xs text-white/25">
+          {t("footer.copyright")}
         </div>
       </div>
     </footer>

@@ -1,72 +1,70 @@
 "use client";
 
 import { useTranslation } from "react-i18next";
-import { SectionDivider } from "./SectionDivider";
 
-interface StudioBlockProps {
-  imageBg: string;
-  reverse?: boolean;
-  eyebrow: string;
-  title: string;
-  body: string;
-  imageAlt: string;
-}
-
-function StudioBlock({
-  imageBg,
-  reverse = false,
-  eyebrow,
-  title,
-  body,
-  imageAlt,
-}: StudioBlockProps) {
-  return (
-    <div className={`flex flex-wrap ${reverse ? "flex-row-reverse" : "flex-row"}`}>
-      <div
-        className={`min-h-[480px] flex-[1_1_320px] ${imageBg}`}
-        role="img"
-        aria-label={imageAlt}
-      />
-      <div className="flex flex-[1_1_320px] flex-col justify-center p-[clamp(48px,8vw,96px)]">
-        <div className="mb-6 h-px w-12 bg-ocean" />
-        <p className="mb-4 font-sans text-[10px] tracking-[0.3em] uppercase text-grey-500">
-          {eyebrow}
-        </p>
-        <h2 className="mb-6 font-serif text-[clamp(2rem,3.5vw,2.8rem)] font-light leading-[1.1] text-grey-800">
-          {title}
-        </h2>
-        <p className="font-sans text-base font-light leading-[1.85] text-grey-500">
-          {body}
-        </p>
-      </div>
-    </div>
-  );
-}
-
-export function StudioSection() {
+export default function StudioSection() {
   const { t } = useTranslation();
 
-  return (
-    <section id="studio" className="py-[clamp(80px,12vw,140px)]">
-      <div className="flex flex-col">
-        <StudioBlock
-          imageBg="bg-[#cfe4ef]"
-          eyebrow={t("studio.spaceEyebrow")}
-          title={t("studio.spaceTitle")}
-          body={t("studio.spaceBody")}
-          imageAlt={t("studio.spaceAlt")}
-        />
-        <StudioBlock
-          imageBg="bg-grey-800"
-          reverse
-          eyebrow={t("studio.equipmentEyebrow")}
-          title={t("studio.equipmentTitle")}
-          body={t("studio.equipmentBody")}
-          imageAlt={t("studio.equipmentAlt")}
-        />
-      </div>
+  const stats = [
+    { value: t("studio.stat1_val"), label: t("studio.stat1") },
+    { value: t("studio.stat2_val"), label: t("studio.stat2") },
+    { value: t("studio.stat3_val"), label: t("studio.stat3") },
+  ];
 
-      <SectionDivider />
+  return (
+    <section id="studio" className="bg-white py-24 lg:py-32">
+      <div className="mx-auto max-w-7xl px-6">
+        <div className="grid items-center gap-16 lg:grid-cols-2">
+          {/* Text column */}
+          <div>
+            <div className="mb-6 flex items-center gap-3">
+              <div className="h-px w-10 bg-ocean" />
+              <span className="text-xs font-medium uppercase tracking-[0.15em] text-ocean">
+                {t("studio.label")}
+              </span>
+            </div>
+
+            <h2 className="mb-6 font-serif text-4xl font-light italic leading-snug text-slate md:text-5xl">
+              {t("studio.title")}
+            </h2>
+
+            <p className="mb-12 max-w-lg text-base leading-relaxed text-muted">
+              {t("studio.text")}
+            </p>
+
+            <div className="grid grid-cols-3 gap-6 border-t border-border pt-10">
+              {stats.map((s) => (
+                <div key={s.label}>
+                  <div className="mb-1 font-serif text-4xl font-light italic text-ocean">
+                    {s.value}
+                  </div>
+                  <div className="text-xs leading-snug text-muted">{s.label}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Visual column */}
+          <div className="relative">
+            {/* Decorations behind */}
+            <div className="absolute -bottom-8 -left-8 h-32 w-32 rounded-2xl bg-ocean-light/50" />
+            <div className="absolute -right-6 -top-6 h-24 w-24 rounded-xl border border-border bg-linen" />
+
+            {/* Image placeholder */}
+            <div className="relative z-10 aspect-[4/5] overflow-hidden rounded-2xl bg-linen">
+              <div className="absolute inset-0 bg-gradient-to-br from-ocean-light/50 via-cream/20 to-linen" />
+              <div className="absolute left-1/4 top-1/4 h-44 w-44 rounded-full border border-ocean/20" />
+              <div className="absolute bottom-1/4 right-1/4 h-32 w-32 rounded-full border border-gold/25" />
+              <div className="absolute left-1/2 top-1/2 h-20 w-20 -translate-x-1/2 -translate-y-1/2 rounded-full bg-ocean/10" />
+              <div className="absolute inset-0 flex items-center justify-center">
+                <span className="select-none font-serif text-9xl font-light italic text-ocean/15">
+                  HR
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   );
 }

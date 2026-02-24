@@ -1,57 +1,90 @@
 "use client";
 
 import { useTranslation } from "react-i18next";
-import { SectionDivider } from "./SectionDivider";
 
-interface ServiceItem {
-  num: string;
-  title: string;
-  desc: string;
-  meta: string;
+function MatIcon() {
+  return (
+    <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" className="h-7 w-7">
+      <rect x="2" y="20" width="24" height="2.5" rx="1.25" />
+      <circle cx="10" cy="12" r="3.5" />
+      <path d="M16 12h6" />
+      <path d="M13.5 15.5l1 4.5H8l1-4.5" />
+    </svg>
+  );
 }
 
-export function ServicesSection() {
+function ReformerIcon() {
+  return (
+    <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" className="h-7 w-7">
+      <rect x="2" y="17" width="24" height="3.5" rx="1.5" />
+      <path d="M6 17v-7M22 17v-7" />
+      <path d="M6 12h16" />
+      <circle cx="11" cy="8" r="2.5" />
+    </svg>
+  );
+}
+
+function PrivateIcon() {
+  return (
+    <svg viewBox="0 0 28 28" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" className="h-7 w-7">
+      <circle cx="11" cy="9" r="4" />
+      <path d="M5 24v-1a6 6 0 0112 0v1" />
+      <path d="M21 11l1.5 1.5L19 16l-2.5-2.5 1-1L19 14l2-2z" />
+    </svg>
+  );
+}
+
+const SERVICES = [
+  { key: "mat", Icon: MatIcon, gradient: "from-ocean-light/60 to-cream" },
+  { key: "reformer", Icon: ReformerIcon, gradient: "from-linen to-cream" },
+  { key: "private", Icon: PrivateIcon, gradient: "from-ocean-light/40 to-cream" },
+];
+
+export default function ServicesSection() {
   const { t } = useTranslation();
-  const items = t("services.items", { returnObjects: true }) as ServiceItem[];
 
   return (
-    <section id="services" className="py-[clamp(80px,12vw,140px)]">
-      <div className="mx-auto max-w-[1200px] px-[clamp(24px,5vw,80px)]">
-        <div className="mb-[clamp(48px,6vw,72px)] text-center">
-          <p className="mb-4 font-sans text-[10px] tracking-[0.3em] uppercase text-grey-500">
-            {t("services.eyebrow")}
-          </p>
-          <h2 className="font-serif text-[clamp(2.5rem,5vw,4.5rem)] font-light leading-[1.05] text-grey-800">
+    <section id="services" className="bg-white py-24 lg:py-32">
+      <div className="mx-auto max-w-7xl px-6">
+        <div className="mb-16 text-center">
+          <div className="mb-4 flex items-center justify-center gap-3">
+            <div className="h-px w-10 bg-ocean" />
+            <span className="text-xs font-medium uppercase tracking-[0.15em] text-ocean">
+              {t("services.label")}
+            </span>
+            <div className="h-px w-10 bg-ocean" />
+          </div>
+          <h2 className="font-serif text-4xl font-light italic text-slate md:text-5xl">
             {t("services.title")}
           </h2>
         </div>
 
-        <div className="grid grid-cols-[repeat(auto-fit,minmax(240px,1fr))]">
-          {items.map((service, i) => (
+        <div className="grid gap-8 md:grid-cols-3">
+          {SERVICES.map(({ key, Icon, gradient }) => (
             <div
-              key={service.num}
-              className={`group border-t-2 border-transparent px-[clamp(32px,4vw,48px)] py-[clamp(32px,4vw,48px)] transition-colors duration-200 hover:border-ocean ${
-                i > 0 ? "border-l border-ocean/15" : ""
-              }`}
+              key={key}
+              className="group overflow-hidden rounded-2xl border border-border bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
             >
-              <span className="mb-5 block font-sans text-[11px] tracking-[0.15em] text-ocean">
-                {service.num}
-              </span>
-              <h3 className="mb-4 font-serif text-[clamp(1.6rem,2.5vw,1.9rem)] font-light leading-[1.15] text-grey-800">
-                {service.title}
-              </h3>
-              <p className="mb-6 font-sans text-[15px] font-light leading-[1.85] text-grey-500">
-                {service.desc}
-              </p>
-              <span className="font-sans text-[11px] tracking-[0.15em] uppercase text-ocean">
-                {service.meta}
-              </span>
+              <div className={`flex h-40 items-center justify-center bg-gradient-to-br ${gradient}`}>
+                <div className="flex h-16 w-16 items-center justify-center rounded-xl bg-white shadow-sm text-ocean transition-all duration-300 group-hover:bg-ocean group-hover:text-white">
+                  <Icon />
+                </div>
+              </div>
+              <div className="p-6">
+                <h3 className="mb-2 font-serif text-2xl font-medium italic text-slate">
+                  {t(`services.${key}_title`)}
+                </h3>
+                <p className="mb-5 text-sm leading-relaxed text-muted">
+                  {t(`services.${key}_text`)}
+                </p>
+                <span className="inline-flex items-center rounded-full bg-ocean-light/60 px-3 py-1 text-xs font-medium text-ocean">
+                  {t(`services.${key}_detail`)}
+                </span>
+              </div>
             </div>
           ))}
         </div>
       </div>
-
-      <SectionDivider />
     </section>
   );
 }

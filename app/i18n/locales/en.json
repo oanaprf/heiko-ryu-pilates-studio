@@ -2,98 +2,110 @@
   "nav": {
     "services": "Services",
     "about": "About",
-    "studio": "Studio",
+    "prices": "Prices",
     "contact": "Contact",
-    "book": "Book",
-    "openMenu": "Open menu",
-    "closeMenu": "Close menu"
+    "book": "Book Now"
   },
   "hero": {
-    "eyebrow": "Reformer Pilates · Precision Movement",
-    "titleLine1": "Move with",
-    "titleLine2": "Intention.",
-    "body": "Every session is a conversation between you and the Reformer — calibrated, precise, transformative.",
-    "cta": "Book a Session",
-    "explore": "Explore classes →",
-    "scroll": "Scroll"
-  },
-  "philosophy": {
-    "eyebrow": "Our Approach",
-    "title": "Strength built from stillness",
-    "quote": "The Reformer doesn't reshape the body. It teaches the mind to inhabit it.",
-    "body1": "Reformer Pilates is a practice of deliberate effort. Each spring, each strap, each breath is calibrated to meet you exactly where you are — not where you think you should be.",
-    "body2": "At Heiko Ryu, sessions are unhurried. We move slowly so you feel everything. Precision over speed. Depth over volume."
-  },
-  "services": {
-    "eyebrow": "What We Offer",
-    "title": "Reformer Pilates, your way",
-    "items": [
-      {
-        "num": "01",
-        "title": "Private Sessions",
-        "desc": "One-to-one coaching, completely tailored. The most direct path to change.",
-        "meta": "60 min · 1 person"
-      },
-      {
-        "num": "02",
-        "title": "Duo Sessions",
-        "desc": "Train alongside a partner and share the experience without losing personal attention.",
-        "meta": "60 min · 2 people"
-      },
-      {
-        "num": "03",
-        "title": "Group Classes",
-        "desc": "Small groups, never more than six. Every participant receives a trained eye.",
-        "meta": "55 min · Max 6"
-      }
-    ]
+    "label": "Boutique Pilates Studio",
+    "headline_1": "Find Your Balance,",
+    "headline_2": "Discover Your Strength",
+    "sub": "A sanctuary for mindful movement and holistic well-being in the heart of the city.",
+    "cta": "Book a Class",
+    "learn": "Learn more",
+    "scroll": "Scroll to explore"
   },
   "studio": {
-    "spaceEyebrow": "The Space",
-    "spaceTitle": "A room that calms before you begin",
-    "spaceBody": "Natural light. Pale timber. Stone. Linen. The studio was designed as a place of quiet before it was ever a gym.",
-    "spaceAlt": "A serene, light-filled studio space",
-    "equipmentEyebrow": "The Equipment",
-    "equipmentTitle": "Balanced Body Reformers. Studio grade.",
-    "equipmentBody": "Every reformer is a Balanced Body — the benchmark for smooth spring action and precise resistance. Maintained to exacting standards, always.",
-    "equipmentAlt": "A Balanced Body Reformer in the studio"
+    "label": "Our Studio",
+    "title": "A Space for Mindful Movement",
+    "text": "Heiko Ryu is a boutique Pilates studio designed as a sanctuary for those who seek harmony between body and mind. Our intimate, carefully curated space allows for personalized attention and a truly transformative experience.",
+    "stat1_val": "8+",
+    "stat1": "Years of experience",
+    "stat2_val": "500+",
+    "stat2": "Happy clients",
+    "stat3_val": "20+",
+    "stat3": "Weekly classes"
   },
-  "instructor": {
-    "eyebrow": "Your Instructor",
-    "title": "Meet Heiko",
-    "portraitAlt": "Portrait of Heiko Ryu",
-    "body1": "Heiko Ryu trained in classical Pilates methodology under leading instructors in Berlin and Sydney. A decade spent working at the intersection of movement science and mindful practice.",
-    "body2": "Before opening the studio, Heiko spent years in rehabilitation settings — supporting post-surgical recovery, chronic pain management, and athletic conditioning. Each session carries that depth.",
-    "body3": "The approach is always the same: meet you where you are, listen to your body, and build from there.",
-    "instagramHandle": "@heikoryupilates",
-    "instagramAria": "Follow Heiko Ryu Pilates on Instagram (opens in new tab)"
+  "benefits": {
+    "label": "Why Pilates",
+    "title": "Transform Body & Mind",
+    "card1_title": "Strength & Core",
+    "card1_text": "Build deep core stability and functional strength through precise, controlled movements.",
+    "card2_title": "Flexibility & Posture",
+    "card2_text": "Improve your range of motion and stand taller with consistent Pilates practice.",
+    "card3_title": "Mind-Body Connection",
+    "card3_text": "Cultivate mindfulness and reduce stress through focused breathwork and intentional movement."
   },
-  "contact": {
-    "eyebrow": "Start Here",
-    "title": "Your first session is the hardest step.",
-    "body": "Reach out via Instagram to enquire about availability and introductory pricing.",
-    "bookCta": "Book a Session",
-    "followCta": "Follow on Instagram",
-    "note": "Studio location shared on enquiry · Sessions by appointment only"
+  "services": {
+    "label": "What We Offer",
+    "title": "Our Classes",
+    "mat_title": "Mat Pilates",
+    "mat_text": "Foundation group classes on the mat. Perfect for all levels, building strength and flexibility together.",
+    "mat_detail": "60 min · Group class",
+    "reformer_title": "Reformer Pilates",
+    "reformer_text": "Small-group sessions on the Reformer machine for deeper, more targeted practice and faster results.",
+    "reformer_detail": "60 min · Max 4 people",
+    "private_title": "Private Sessions",
+    "private_text": "Fully personalized one-on-one coaching tailored to your specific goals, needs, and body.",
+    "private_detail": "60 min · 1-on-1"
+  },
+  "prices": {
+    "label": "Pricing",
+    "title": "Simple, Transparent Plans",
+    "popular": "Most Popular",
+    "currency": "RON",
+    "s_name": "Starter",
+    "s_price": "150",
+    "s_period": "per session",
+    "s_desc": "Perfect for trying Pilates",
+    "s_f1": "1 class per booking",
+    "s_f2": "Mat or Reformer",
+    "s_f3": "All levels welcome",
+    "s_cta": "Get Started",
+    "m_name": "Monthly",
+    "m_price": "800",
+    "m_period": "per month",
+    "m_desc": "Best value for regulars",
+    "m_f1": "8 classes per month",
+    "m_f2": "Mat & Reformer access",
+    "m_f3": "Priority booking",
+    "m_cta": "Choose Monthly",
+    "p_name": "Premium",
+    "p_price": "1.400",
+    "p_period": "per month",
+    "p_desc": "Unlimited transformation",
+    "p_f1": "Unlimited classes",
+    "p_f2": "1 private session / month",
+    "p_f3": "Exclusive events & early access",
+    "p_cta": "Go Premium"
+  },
+  "testimonials": {
+    "label": "Testimonials",
+    "title": "Stories of Transformation",
+    "q1": "Heiko Ryu changed the way I think about movement. I've never felt stronger or more centered in my life.",
+    "q1_author": "Maria C.",
+    "q1_role": "Client since 2022",
+    "q2": "The instructors are exceptional. Every session feels like a complete reset for my body and mind.",
+    "q2_author": "Andrei M.",
+    "q2_role": "Monthly Member",
+    "q3": "I started on a doctor's recommendation and stayed for the incredible community and real results.",
+    "q3_author": "Elena B.",
+    "q3_role": "Premium Member"
+  },
+  "cta": {
+    "label": "Start Today",
+    "title": "Ready to Begin Your Journey?",
+    "sub": "Join us for a class and discover what mindful movement can do for your body and mind.",
+    "button": "Book Your First Class"
   },
   "footer": {
-    "tagline": "Movement as Medicine",
-    "follow": "Follow",
-    "copyright": "© 2025 Heiko Ryu Pilates Studio",
-    "studioType": "Reformer Pilates Studio",
-    "switchToEn": "Switch to English",
-    "switchToRo": "Schimbă în Română",
-    "instagramAria": "Follow Heiko Ryu Pilates on Instagram (opens in new tab)",
-    "instagramHandle": "@heikoryupilates",
-    "nav": {
-      "services": "Services",
-      "about": "About",
-      "studio": "Studio",
-      "contact": "Contact"
-    }
-  },
-  "langSwitcher": {
-    "en": "Switch to English",
-    "ro": "Switch to Romanian"
+    "tagline": "Mindful movement for every body.",
+    "contact_title": "Contact",
+    "address": "Str. Florilor 12, București",
+    "email": "hello@heikoryupilates.ro",
+    "phone": "+40 722 123 456",
+    "follow": "Follow Us",
+    "lang_title": "Language",
+    "copyright": "© 2024 Heiko Ryu Pilates. All rights reserved."
   }
 }

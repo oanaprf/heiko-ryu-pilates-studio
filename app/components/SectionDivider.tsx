@@ -1,7 +1,9 @@
-export function SectionDivider() {
+export default function SectionDivider({ className = "" }: { className?: string }) {
   return (
-    <div className="mx-auto mt-[clamp(80px,12vw,140px)] max-w-[1200px] px-[clamp(24px,5vw,80px)]">
-      <div className="h-px bg-ocean/25" />
+    <div className={`flex items-center gap-4 ${className}`}>
+      <div className="h-px flex-1 bg-border" />
+      <div className="h-1.5 w-1.5 rounded-full bg-ocean" />
+      <div className="h-px flex-1 bg-border" />
     </div>
   );
 }

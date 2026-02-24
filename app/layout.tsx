@@ -3,36 +3,36 @@ import { Cormorant_Garamond, DM_Sans } from "next/font/google";
 import "./globals.css";
 
 const cormorant = Cormorant_Garamond({
-  variable: "--font-cormorant",
   subsets: ["latin"],
-  weight: ["300", "400", "500"],
+  weight: ["300", "400", "500", "600", "700"],
   style: ["normal", "italic"],
+  variable: "--font-cormorant",
   display: "swap",
 });
 
 const dmSans = DM_Sans({
-  variable: "--font-dm-sans",
   subsets: ["latin"],
-  weight: ["300", "400", "500"],
+  weight: ["300", "400", "500", "600"],
+  variable: "--font-dmsans",
   display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Heiko Ryu | Reformer Pilates Studio",
+  title: "Heiko Ryu — Pilates Studio",
   description:
-    "Private & group Reformer Pilates. Precision movement, coastal calm.",
+    "Un studio boutique de Pilates dedicat mișcării conștiente și bunăstării holistice.",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
-      <body className={`${cormorant.variable} ${dmSans.variable} antialiased`}>
-        {children}
-      </body>
+    <html
+      lang="ro"
+      className={`${cormorant.variable} ${dmSans.variable}`}
+      suppressHydrationWarning
+    >
+      <body>{children}</body>
     </html>
   );
 }
